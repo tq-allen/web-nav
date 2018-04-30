@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="dialog edit-website-dialog" style="opacity: 1; visibility: visible;">
+		<div class="edit-website">	
+			<span>请输入网址：</span>
+			<input type="text" placeholder="请输入网址：">
+			<button class="sure" type="button">确定</button>
+			<button class="cancel" type="button">取消</button>
+		</div>
+	</div>
+	<button type="button" id="btn">click me</button>
+	<script>
+		document.querySelector('input').focus()
+		document.querySelector('#btn').onclick = function(){
+			document.querySelector('.dialog').classList.add('active')
+			document.querySelector('input').focus()
+		}
+	</script>
+</body>
+</html>
