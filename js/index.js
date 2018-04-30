@@ -168,7 +168,7 @@ delButton.forEach(function(delItem){
 })
 
 delWebSiteBtnSure.onclick = function(){
-	delImg.src = '../icon.png'
+	delImg.src = './icon.png'
 	delWebSiteDialog.classList.remove('active')
 	hash[delBtnId] = undefined
 	localStorage.setItem('newHash', JSON.stringify(hash))
@@ -179,6 +179,6 @@ delWebSiteBtnCancel.onclick = function(){
 
 kbdIcon.forEach(function(iconItem){
 	iconItem.onerror = function(){
-		this.src = '../icon.png'
+		this.src = './icon.png'
 	}
 })
